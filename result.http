@@ -1,48 +1,77 @@
-### register
+//api1
 POST http://localhost:3000/register/
 Content-Type: application/json
 
 {
-    "username": "adam_richard",
-    "password": "richard_567",
-    "name": "Adam Richard",
-    "gender": "male"
+  "userName": "adam_richard1",
+  "password": "rich5",
+  "name": "Adam Richard",
+  "gender":"male"
 }
 
-### login
-POST http://localhost:3000/login/ 
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
+//api2 //login 
+### 
+POST http://localhost:3000/login/
 Content-Type: application/json
 
 {
-    "username": "JoeBiden",
-    "password": "biden@123"
+   "username":"JoeBiden",
+  "password":"biden@123"
 }
 
-###API-3 GET 
-GET http://localhost:3000/user/tweets/feed/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY3NTQ0OTc3fQ.sd1H70ypqmh7n795u__BkLMy72do460A0j_DAInxdO4
+###
+//api3 
+GET  http://localhost:3000/user/tweets/feed/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
 
-
-
-###API-4 GET 
+### 
+//api4 
 GET http://localhost:3000/user/following/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY3NTQ0OTc3fQ.sd1H70ypqmh7n795u__BkLMy72do460A0j_DAInxdO4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
 
-
-
-###API-5 GET 
+###
+//api5 
 GET http://localhost:3000/user/followers/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY3NTQ0OTc3fQ.sd1H70ypqmh7n795u__BkLMy72do460A0j_DAInxdO4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
+
+###
+//api 6
+GET http://localhost:3000/tweets/2/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
 
 
+###
+//api 7
+GET http://localhost:3000/tweets/1/likes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
 
 
-###API-6 GET 
-GET http://localhost:3000/tweets/9/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY3NTQ0OTc3fQ.sd1H70ypqmh7n795u__BkLMy72do460A0j_DAInxdO4
+### 
+//api 8
+GET http://localhost:3000/tweets/1/replies/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
+
+###
+//api 9
+GET http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
 
 
-###API-7 GET 
-GET http://localhost:3000/tweets/:tweetId/likes/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY3NTQ0OTc3fQ.sd1H70ypqmh7n795u__BkLMy72do460A0j_DAInxdO4
+###
+//api 10
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
+Content-Type: application/json
 
+{
+   "tweet": "The Mornings vivek reddy..."
+
+}
+
+
+###
+//api 11
+DELETE http://localhost:3000/tweets/15/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjIwNzI3MDkyfQ.Podi50samA8uiUkFcGEs-1snciS4tC-PCUo7WnVs4xo
